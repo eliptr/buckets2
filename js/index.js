@@ -46,6 +46,14 @@ function test() {
     type = Math.floor(Math.random() * 5) + 1;
   }
   console.log(type);
+  
+  pixelRatio = window.devicePixelRatio || 1;
+  windowWidth = window.innerWidth * 2;
+  windowHeight = window.innerHeight;
+  windowWidth = window.innerWidth * 2;
+  windowHeight = window.innerHeight;
+  pixelRatio = window.devicePixelRatio || 1; /// get pixel ratio of device
+
 
   typeTest()
   draw()
@@ -53,11 +61,11 @@ function test() {
 
 function draw() {
 
-  pixelRatio = window.devicePixelRatio || 1;
-  canvas.width = 393 * pixelRatio;   /// resolution of canvas
-  canvas.height = 1572 * pixelRatio;
-  canvas.style.width = 393 + 'px';   /// CSS size of canvas
-  canvas.style.height = 1572 + 'px';
+  // fixed canvas resolution
+  canvas.width = windowWidth * pixelRatio;   /// resolution of canvas
+  canvas.height = windowHeight * pixelRatio;
+  canvas.style.width = windowWidth + 'px';   /// CSS size of canvas
+  canvas.style.height = windowHeight + 'px';
 
   ctx.drawImage(base, 0, 0);
 
