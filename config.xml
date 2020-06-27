@@ -5,7 +5,7 @@
  <preference name="orientation" value="portrait" />
  <preference name="KeepRunning" value="true"/>
  <preference name="android-targetSdkVersion" value="29" />
- <name>Buckets</name>
+ <name>Buckets 2</name>
  <icon src="" />
 
 
