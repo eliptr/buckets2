@@ -5,7 +5,8 @@ body {
   padding: 0;
   border: 0;
   padding-bottom: 0px;
-  overflow: hidden;
+  overflow-y: hidden; /* hide vertical scrollbar */
+  overflow-x: scroll; /* show only horizontal scrollbar */
   background-color: #E3B04B;
 }
 
